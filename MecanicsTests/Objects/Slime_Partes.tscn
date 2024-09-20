@@ -1,0 +1,327 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Assets/Slime_EmPartes/SlimePartes/body3.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Slime_EmPartes/SlimePartes/nucleo3.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Slime_EmPartes/SlimePartes/olhosPupilaRight.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Slime_EmPartes/SlimePartes/base1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Slime_EmPartes/SlimePartes/base2.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Slime_EmPartes/SlimePartes/nucleo2.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Slime_EmPartes/SlimePartes/nucleo1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Slime_EmPartes/SlimePartes/body1.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Slime_EmPartes/SlimePartes/olhosPupilaLeft.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Slime_EmPartes/SlimePartes/olhos1.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Slime_EmPartes/SlimePartes/body2.png" type="Texture" id=11]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Idle"
+length = 0.6
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("olhos:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -186 ), Vector2( 0, -200 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("olhos:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("olhos:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("olhos/Sprite:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 10 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("olhos/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("olhos/Sprite/pupilas/PupilaLeft:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -63, 0 ), Vector2( -76.6667, 10 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("olhos/Sprite/pupilas/PupilaRight:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 63, 1 ), Vector2( 70, 10 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("olhos/Sprite/pupilas:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -17.3333 ), Vector2( 0, 9.33334 ), Vector2( 0, -9.99998 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("nucleo:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 3.33333, -86.6667 ), Vector2( 0, -116.667 ), Vector2( 0, -100 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("nucleo/nucleo3:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 10, -13.3333 ), Vector2( 16.6667, -6.66666 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("olhos:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -186 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("olhos:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("olhos:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("olhos/Sprite:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 10 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("olhos/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("olhos/Sprite/pupilas/PupilaLeft:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -63, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("olhos/Sprite/pupilas/PupilaRight:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 63, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("olhos/Sprite/pupilas:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -17.3333 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("nucleo:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.33333, -86.6667 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("nucleo/nucleo3:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 10, -13.3333 ) ]
+}
+
+[node name="Slime_Partes" type="KinematicBody2D"]
+
+[node name="Corpo" type="Node2D" parent="."]
+scale = Vector2( 0.3, 0.3 )
+
+[node name="body" type="Node2D" parent="Corpo"]
+position = Vector2( -1, -150 )
+
+[node name="body1" type="Sprite" parent="Corpo/body"]
+position = Vector2( 0, -22 )
+texture = ExtResource( 8 )
+
+[node name="body2" type="Sprite" parent="Corpo/body"]
+position = Vector2( 0, -7 )
+texture = ExtResource( 11 )
+
+[node name="body3" type="Sprite" parent="Corpo/body"]
+texture = ExtResource( 1 )
+
+[node name="nucleo" type="Node2D" parent="Corpo"]
+position = Vector2( 3.33333, -86.6667 )
+
+[node name="nucleo1" type="Sprite" parent="Corpo/nucleo"]
+texture = ExtResource( 7 )
+
+[node name="nucleo2" type="Sprite" parent="Corpo/nucleo"]
+texture = ExtResource( 6 )
+
+[node name="nucleo3" type="Sprite" parent="Corpo/nucleo"]
+position = Vector2( 10, -13.3333 )
+texture = ExtResource( 2 )
+
+[node name="olhos" type="Node2D" parent="Corpo"]
+position = Vector2( 0, -186 )
+
+[node name="Sprite" type="Sprite" parent="Corpo/olhos"]
+texture = ExtResource( 10 )
+
+[node name="pupilas" type="Node2D" parent="Corpo/olhos/Sprite"]
+position = Vector2( 0, -17.3333 )
+
+[node name="PupilaLeft" type="Sprite" parent="Corpo/olhos/Sprite/pupilas"]
+position = Vector2( -63, 0 )
+texture = ExtResource( 9 )
+
+[node name="PupilaRight" type="Sprite" parent="Corpo/olhos/Sprite/pupilas"]
+position = Vector2( 63, 1 )
+texture = ExtResource( 3 )
+
+[node name="Base" type="Node2D" parent="Corpo"]
+position = Vector2( -1, -150 )
+
+[node name="Base1" type="Sprite" parent="Corpo/Base"]
+position = Vector2( 1, 119 )
+texture = ExtResource( 4 )
+
+[node name="Base2" type="Sprite" parent="Corpo/Base"]
+position = Vector2( 1, 119 )
+texture = ExtResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Corpo"]
+autoplay = "Idle"
+anims/Idle = SubResource( 1 )
+anims/RESET = SubResource( 2 )
