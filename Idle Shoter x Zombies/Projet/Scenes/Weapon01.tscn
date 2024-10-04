@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/weapons and coletables.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Weapon01.gd" type="Script" id=2]
+
+[node name="Weapon01" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+rotation = 1.5708
+texture = ExtResource( 1 )
+hframes = 7
+
+[node name="ShootTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="Muzzle" type="Position2D" parent="."]
+position = Vector2( 5, -4 )
